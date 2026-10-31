@@ -5,3 +5,4 @@ test/test.exe
 *.zip
 package/README.md
 package/BepInEx/plugins/LinkRadio/LinkRadio.dll
+release/

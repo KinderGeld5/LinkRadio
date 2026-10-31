@@ -77,6 +77,14 @@ Hinweis: Bestehende Config-Dateien behalten ihre alten Werte, wenn sich im Code 
 - Das Fenster braucht zur Laufzeit die ungestrippten Unity-Module. BepInExPack_NomadDrive liefert sie über `dll_search_path_override = unstripped_libs`.
 - Gesperrte/private Playlist-Videos werden beim Abspielen übersprungen (Fehlermeldung).
 
+## Gelernt beim Modden von Nomad Drive
+- Solange das Spiel läuft, ist die Mod-DLL gesperrt: vor dem Kopieren prüfen, ob der Prozess `Nomad Drive` läuft, und die alte DLL sichern.
+- Referenzen: Mirror und Input System aus `Nomad Drive_Data\Managed`, Unity-Module aus `unstripped_libs` (siehe `libs/README.txt`).
+- IMGUI: Nie im selben Event die Struktur ändern. Reiterwechsel erst im Layout-Event übernehmen, Listen-Änderungen nach dem Zeichnen ausführen.
+- Eigene `GUIStyle`s mit zur Laufzeit erzeugten Texturen brauchen `HideFlags.HideAndDontSave` und eine Neuerzeugung, falls sie verschwinden (`Theme.Ensure`).
+- Neue Daten für Clients ohne Protokollbruch: freie Felder bestehender Nachrichten nutzen (Beispiel `Pos` in `Op 18`). Unbekannte Mirror-Nachrichten trennen Clients.
+- Git: Der App-Ordner für Sessions hat einen zu langen Pfad (`.git/hooks: Filename too long`). Repos in einem kurzen Pfad wie `E:\Claude` anlegen.
+
 ## Offene Punkte / Ideen
 - Spotify-Playlists/Alben (z. B. über Embed-Seite) – ungetestet möglich.
 - Streaming statt komplettes Dekodieren; Cache-/Speicher-Anzeige im Fenster.
