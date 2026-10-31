@@ -7,7 +7,7 @@
 ## Was es ist
 BepInEx-5-Plugin (kompatibel mit BepInExPack_NomadDrive 5.4.23.2). Spielt YouTube-, YouTube-Music-Links, YouTube-Playlists und
 einzelne Spotify-Tracks über Autoradio/Boombox (3D) oder global ab – **im Multiplayer synchron** (Host + Mitspieler, Mirror).
-Version **1.0.0** (erste öffentliche Version, entspricht dem internen Stand 1.5.0), GUID `linkradio.nomaddrive`, Namespace `LinkRadio`. Soft-Dependency auf den Boombox-Mod `ramses.nomaddrive.boombox`.
+Version **1.1.0** (1.0.0 war die erste öffentliche Version; 1.1.0 ergänzt nur Beschreibung und `cover.png` für ModMenu), GUID `linkradio.nomaddrive`, Namespace `LinkRadio`. Soft-Dependency auf den Boombox-Mod `ramses.nomaddrive.boombox`.
 
 ## Stand
 - Getestet im Spiel (Host + 1 Kollege): YouTube-Links, Wunsch/Annehmen/Warteschlange, gemeinsamer Start (ab 1.2.0 funktioniert es auch beim Kollegen).

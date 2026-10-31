@@ -17,6 +17,9 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.Networking;
 
+[assembly: AssemblyDescription("Plays YouTube, YouTube Music, and Spotify links through the car radio or a boombox, in sync for everyone with the mod. Press F7 in game to open it.")]
+[assembly: AssemblyMetadata("Description.de", "Spielt YouTube-, YouTube-Music- und Spotify-Links über Autoradio oder Boombox ab, synchron für alle Spieler mit dem Mod. Im Spiel mit F7 öffnen.")]
+
 namespace LinkRadio
 {
     public struct LinkRadioMsg : NetworkMessage
@@ -37,7 +40,7 @@ namespace LinkRadio
     public class LinkRadioPlugin : BaseUnityPlugin
     {
         public const string Guid = "linkradio.nomaddrive";
-        public const string Version = "1.0.0";
+        public const string Version = "1.1.0";
 
         internal static LinkRadioPlugin I;
         internal static ManualLogSource L;
