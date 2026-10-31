@@ -1,0 +1,1 @@
+Bitte zuerst `DEVELOPMENT.md` lesen (Projektstand, Aufbau, Build, Entscheidungen). Das Projekt ist fertig gebaut – nicht neu aufbauen, nur gezielt ändern. Antworten auf Deutsch. `README.md` ist die Anleitung für Spieler.
